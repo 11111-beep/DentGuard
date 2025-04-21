@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_wave_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- 内容区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_use_dentalfloss" />
+
+            <!-- 卡片1: 使用牙线的重要性 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. 使用牙线的重要性"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 预防龋齿：牙线可以清除牙齿邻面的菌斑，减少龋齿的风险\n• 预防牙龈疾病：牙线能去除牙龈边缘的食物残渣和菌斑，防止牙龈炎和牙周病\n• 改善口气：清理隐藏的食物残渣和细菌，有助于保持口气清新\n• 保护整体健康：口腔健康与全身健康密切相关，定期使用牙线可降低心血管疾病、糖尿病等风险"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片2: 牙线的种类 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. 牙线的种类"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 普通牙线：由尼龙或塑料制成，适合大多数人的日常使用\n• 蜡质牙线：表面涂蜡，更容易滑入紧密的牙缝\n• 无蜡牙线：摩擦力较大，适合较宽的牙缝\n• 牙线棒（一次性牙线）：带有手柄，方便操作，尤其适合初学者或外出时使用\n• 超级牙线：适合有牙桥、牙冠或种植牙的人群，材质更坚韧\n• 水牙线（冲牙器）：利用水流清洁牙缝，适合戴牙套或不方便使用传统牙线的人"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片3: 正确使用牙线的步骤 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. 正确使用牙线的步骤"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="（1）准备阶段\n• 剪取约45厘米的普通牙线（如果使用牙线棒则无需剪取）\n• 将牙线两端绕在双手的中指上，留出中间2-3厘米用于清洁\n\n（2）操作步骤\n• 拉紧牙线：用拇指和食指控制牙线，拉紧成一条直线\n• 滑入牙缝：轻轻将牙线滑入两颗牙齿之间的缝隙，避免用力过猛以免损伤牙龈\n• 贴合牙齿侧面：将牙线贴着一颗牙齿的侧面，轻轻上下移动，深入到牙龈线下方（约1-2毫米），刮除菌斑\n• 换另一侧：同样方法清洁相邻牙齿的另一侧面\n• 重复操作：每清洁完一个牙缝后，将牙线移到干净的部分，继续清洁下一个牙缝\n\n（3）完成清洁\n• 清洁完所有牙缝后，用清水漱口，清除松动的残留物\n• 如果使用的是普通牙线，丢弃用过的部分；如果是牙线棒，清洗后可重复使用（建议每日更换）"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片4: 使用牙线的注意事项 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. 使用牙线的注意事项"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 频率：每天至少使用一次牙线，最好是在晚上刷牙前进行\n• 力度适中：不要用力过猛，以免损伤牙龈或导致牙龈出血\n• 覆盖全面：确保每颗牙齿的邻面都得到清洁，尤其是后牙区域\n• 选择合适工具：根据个人情况选择合适的牙线类型\n• 避免共用牙线：牙线为个人用品，避免与他人共用以防交叉感染"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片5: 牙线使用的常见问题 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. 牙线使用的常见问题"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="（1）牙龈出血怎么办？\n• 初次使用牙线时可能会出现轻微出血，通常是因为牙龈敏感或炎症引起的\n• 坚持使用几天后，出血会逐渐减少\n• 如果持续出血，可能需要咨询牙医检查是否有牙龈疾病\n\n（2）牙线断了怎么办？\n• 如果牙线经常断裂，可能是牙缝太紧或牙线质量不佳\n• 可以尝试使用蜡质牙线或超级牙线\n\n（3）牙线能替代刷牙吗？\n• 不能！牙线只能清洁牙齿邻面，无法代替牙刷清洁牙齿表面\n• 两者应结合使用，同时配合漱口水效果更佳"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片6: 补充护理建议 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6. 补充护理建议"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 定期洗牙：即使每天使用牙线，仍需每半年至一年进行专业洗牙，清除顽固牙结石\n• 饮食习惯：减少糖分摄入，多吃富含纤维的食物（如蔬菜、水果），有助于自然清洁牙齿\n• 儿童使用牙线：当孩子的牙齿开始紧密接触时（通常在2-3岁），可以在家长帮助下开始使用牙线"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

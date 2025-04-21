@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DentGuard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/romantic_blue</item>
+        <item name="colorPrimaryVariant">#199B61</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/mint_300</item>
+        <item name="colorSecondaryVariant">@color/mint_400</item>
+        <item name="colorOnSecondary">@color/mint_500</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/mint_50</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@color/white</item>
+        <!-- 文字颜色 -->
+        <item name="android:textColor">@color/mint_400</item>
+        <item name="android:textColorSecondary">@color/mint_300</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.DentGuard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

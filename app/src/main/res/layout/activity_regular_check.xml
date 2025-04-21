@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_wave_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- 内容区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_regular_check" />
+
+            <!-- 卡片1: 检查频率 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. 检查频率"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="一般人群：建议每6个月至1年进行一次牙科检查。\n\n高风险人群：\n• 有龋齿、牙周病或口腔疾病的患者\n• 吸烟者、糖尿病患者或免疫力较低的人群\n• 正在进行牙齿矫正或其他牙科治疗的人\n这些人群可能需要每3-6个月检查一次。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片2: 检查内容 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. 检查内容"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="（1）牙齿健康状况\n• 检查是否有龋齿（蛀牙）、牙齿磨损、裂纹等问题\n• 观察牙齿排列是否整齐，是否存在咬合异常\n\n（2）牙龈健康状况\n• 检查牙龈是否有红肿、出血、萎缩等牙龈炎或牙周病的症状\n• 测量牙周袋深度，评估牙周组织的健康状况\n\n（3）口腔软组织检查\n• 检查舌头、颊黏膜、上颚、咽喉等部位是否有溃疡、白斑或其他异常\n• 筛查早期口腔癌或其他病变\n\n（4）牙齿清洁情况\n• 检查牙齿表面是否有菌斑、牙结石堆积\n• 评估日常刷牙和使用牙线的效果\n\n（5）影像学检查（如需要）\n• 拍摄X光片或全景片，查看牙根、牙槽骨、智齿及其他隐藏问题\n• 用于诊断龋齿、牙根感染、囊肿或颌骨异常"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片3: 常见处理项目 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. 常见处理项目"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 洗牙（洁牙）：清除牙结石和菌斑，预防牙龈炎和牙周病\n• 补牙：修复早期龋齿，防止进一步恶化\n• 涂氟：增强牙齿抗龋能力，尤其适合儿童和龋齿高风险人群\n• 窝沟封闭：预防磨牙的窝沟龋，主要针对儿童和青少年\n• 牙周治疗：如刮治或根面平整，用于治疗牙周病\n• 拔牙或手术：如智齿拔除、囊肿切除等"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片4: 检查好处 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. 检查好处"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 早发现早治疗：及时发现龋齿、牙周病或其他问题，避免病情加重\n• 节省费用：早期治疗成本远低于晚期复杂治疗\n• 预防全身疾病：口腔健康与全身健康密切相关，牙周病可能增加心血管疾病、糖尿病等风险\n• 保持口气清新：定期清洁口腔有助于减少细菌滋生，改善口气"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片5: 注意事项 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. 注意事项"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="• 不要拖延：即使没有明显不适，也应按时检查，因为许多口腔问题早期无症状\n• 遵医嘱：按照牙医的建议进行后续护理或治疗\n• 健康生活方式：戒烟限酒，均衡饮食，减少糖分摄入，保护牙齿健康"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/toolbar_wave_background"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:elevation="4dp"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- 内容区域 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ImageView -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/ic_correct_brushing" />
+
+            <!-- 卡片1: 准备工作 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1. 准备工作"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="选择合适的工具：使用软毛牙刷和含氟牙膏。\n准备清水：用于漱口。\n站姿或坐姿：站在镜子前或坐着刷牙，确保视线清晰。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片2: 刷牙操作 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2. 刷牙操作"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="（1）起始姿势：将牙刷与牙龈线呈45度角放置。\n\n（2）清洁牙齿外侧面（唇侧）：\n起始位置：从右上后牙开始，轻轻画小圆圈移动牙刷，每次覆盖2-3颗牙齿；\n逐步移动：沿着牙齿外侧从前向后慢慢移动，直到刷完整个上排牙齿的外侧；\n下排牙齿：换到下排牙齿，重复同样的动作，依然是从后向前逐步清洁。\n\n（3）清洁牙齿内侧面（舌侧）：\n起始位置：同样以45度角放置牙刷，重点清洁牙齿内侧；\n前牙部分：对于前牙的内侧，可以将牙刷竖直放置，用刷头的尖端轻轻上下刷动；\n后牙部分：对于后牙内侧，使用小圆圈的方式逐步清洁。\n\n（4）清洁咬合面：\n牙刷平放：将牙刷平放在牙齿的咬合面上；\n前后拉动：轻轻前后拉动牙刷，清洁牙齿咬合面上的沟槽；\n覆盖全面：确保每颗牙齿的咬合面都得到充分清洁。\n\n（5）注意细节：\n力度适中：避免用力过猛，以免损伤牙龈或磨损牙齿表面；\n时间控制：每个区域刷10-15秒，总共刷牙时间至少2分钟；\n无遗漏区域：确保所有牙齿的外侧、内侧和咬合面都被清洁到。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片3: 清洁舌苔（可选） -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3. 清洁舌苔（可选）"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="使用牙刷背面或专门的舌苔刷轻刮舌面，清除舌苔上的细菌，保持口气清新。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片4: 漱口 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4. 漱口"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="用清水彻底漱口，清除口腔内的牙膏残留。如需要，可使用漱口水进一步清洁口腔。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 卡片5: 牙刷保养 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#F8F9FA">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    
+                    <TextView
+                        android:id="@+id/tv_step_title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5. 牙刷保养"
+                        android:textStyle="bold"
+                        android:textColor="#2C3E50"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_step_details5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="冲洗干净牙刷并甩干水分，将其直立放置，保持干燥。每隔3个月更换一次牙刷，或当刷毛出现弯曲、磨损时及时更换。"
+                        android:textColor="#34495E"
+                        android:lineSpacingExtra="4dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="page_margin">8dp</dimen>
+    <dimen name="page_offset">15dp</dimen>
+    <dimen name="chip_elevation">4dp</dimen>
+    <dimen name="chip_stroke_width">1dp</dimen>
+    <dimen name="chip_padding_horizontal">8dp</dimen>
+    <dimen name="chip_padding_vertical">4dp</dimen>
+    <dimen name="text_shadow_radius">2dp</dimen>
+    <dimen name="text_shadow_dx">0dp</dimen>
+    <dimen name="text_shadow_dy">1dp</dimen>
+</resources>
